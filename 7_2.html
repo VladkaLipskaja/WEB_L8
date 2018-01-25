@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<meta charset="utf-8">
+<TITLE>Реакція на подію change в тезі select</TITLE>
+<link rel="stylesheet" href="style72.css">
+<script language="JavaScript">
+function cost(x1,x2,x3,x4,c1,c2,c3,c4) {
+
+alert("Summ: "+(x1*c1+x2*c2+x3*c3+x4*c4));
+}
+</script>
+</head>
+<body>
+<center>
+	<table name="table1" class="products">
+		<tr>
+			<th>Products</th>
+			<th>Price</th>
+			<th>Quantity</th>
+		</tr>
+		<tr>
+			<td>Apple</td>
+			<td>14 ₴</td>
+			<td><select name="count1">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Banana</td>
+			<td>30 ₴</td>
+			<td><select name="count2">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>33 ₴</td>
+			<td><select name="count3">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td>Pineapple</td>
+			<td>58 ₴</td>
+			<td><select name="count4">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select></td>
+		</tr>
+	</table>
+	<br>
+	<input type="submit" value="Count" onClick="cost(14,45,33,58,document.getElementsByName('count1')[0].value,document.getElementsByName('count2')[0].value,document.getElementsByName('count3')[0].value,document.getElementsByName('count4')[0].value)">
+</center>
+</body>
+</html>
